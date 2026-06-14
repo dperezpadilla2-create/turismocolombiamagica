@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+/*General*/
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: #F6F7FB;
+    font-family: "Quicksand", sans-serif;
+    font-size: 2rem;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Epilogue", sans-serif;
+}
+a{
+    color: #124C80;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/*header*/
+h1{
+    font-size: 7rem;
+    font-weight: 700;
+    color: #124C80;
+}
+header nav{
+    font-size: 2.5rem;
+}
+/*main*/
+h2{
+    color: #8C1821;
+    font-weight: 800;
+    font-size: 3.6rem;
+}
+h3{
+    color: #8C1821;
+    font-weight: 600;
+    font-size: 2.3rem;
+}
+.duracion{
+    font-weight: 700;
+}
+.precio{
+    font-style: italic;
+    letter-spacing: 2px;
+}
+/*Form*/
+legend{
+    font-weight: 700;
+}
+.enviarformulario{
+    font-weight: 900;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+/*footer*/
+footer h3{
+    font-size: 1.8rem;
+}
+footer p{
+    font-size: 1.6rem;
+}
+footer a{
+    font-size: 1.6rem;
+    font-weight: 500;
+}

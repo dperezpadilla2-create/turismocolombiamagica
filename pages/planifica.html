@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLANIFICA</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>COLOMBIA MÁGICA</h1>
+        <figure>
+            <img src="../img/logo.png" alt="Logo colombia magica">
+        </figure>
+        <p>Descubre la magia de Colombia, el pais de la belleza</p>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/caribe.html">Caribe</a></li>
+                <li><a href="../pages/ciudades.html">Ciudades</a></li>
+                <li><a href="../pages/naturaleza.html">Naturaleza</a></li>
+                <li><a href="#">Planifica tu viaje</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <section>
+        <h2>PLANIFICA TU VIAJE</h2>
+        <h3>Tu próxima aventura en Colombia comienza aquí</h3>
+        <p>Cada viajero es único y cada experiencia también. Completa el siguiente formulario y nuestro equipo diseñará una propuesta personalizada según tus intereses, fechas de viaje y presupuesto.</p>
+        <figure>
+            <img src="../img/logoplanifica.png" alt="logotipo para la seccion de planifica el viaje">
+        </figure>
+        <form action="">
+               <fieldset>
+                   <legend>INFORMACIÓN PERSONAL</legend>
+                       <label for="nombre"> Nombre Completo </label>
+                       <input type="text" id="nombre" placeholder="Nombre y Apellido" required>
+
+                       <label for="correo">Correo Electronico</label>
+                       <input type="email" id="correo" placeholder="ejemplo@correo.com" required>
+
+                       <label for="numero">Numero de Telefono</label>
+                       <input type="tel" id="numero" placeholder="+5411111111" required>
+
+                       <label for="pais">Pais de Residencia</label>
+                       <input type="text" id="pais" placeholder="Argentina" required>
+               </fieldset>
+               <fieldset>
+                   <legend>TU DESTINO IDEAL</legend>
+                       <input type="checkbox" id="cartagena">
+                       <label for="cartagena">Cartagena Colonial</label>
+
+                       <input type="checkbox" id="sanandres">
+                       <label for="sanandres">San Andrés y Mar de los Siete Colores</label>
+
+                       <input type="checkbox" id="santamarta">
+                       <label for="santamarta">Santa Marta y Parque Tayrona</label>
+
+                       <input type="checkbox" id="bogota">
+                       <label for="bogota">Bogotá, Corazón Cultural de Colombia</label>
+
+                       <input type="checkbox" id="medellin">
+                       <label for="medellin">Medellín, Ciudad de la Eterna Primavera</label>
+
+                       <input type="checkbox" id="cali">
+                       <label for="cali">Cali, Capital Mundial de la Salsa</label>
+
+                       <input type="checkbox" id="canocristales">
+                       <label for="canocristales">Caño Cristales</label>
+
+                       <input type="checkbox" id="ejecafetero">
+                       <label for="ejecafetero">Eje Cafetero</label>
+
+                       <input type="checkbox" id="desierto">
+                       <label for="desierto">Desierto de la Tatacoa</label>
+
+                       <input type="checkbox" id="asesoria">
+                       <label for="asesoria">Quiero asesoría para elegir un destino</label>
+               </fieldset>
+               <fieldset>
+                   <legend>INFORMACIÓN DEL VIAJE</legend>
+                   <label for="inicio">Desde:</label>
+                   <input type="date" id="inicio" required>
+
+                   <label for="fin">Hasta:</label>
+                   <input type="date" id="fin" required>
+
+                   <label for="viajeros">Número De Viajeros</label>
+                   <input type="number" id="viajeros" placeholder="1" required>
+
+                   <p>Tipo De Viaje</p>
+                   <input type="radio" id="individual" name="una">
+                   <label for="individual">Individual</label>
+
+                   <input type="radio" id="enpareja" name="una">
+                   <label for="enpareja">En pareja</label>
+
+                   <input type="radio" id="familiar" name="una">
+                   <label for="familiar">Familiar</label>
+
+                   <input type="radio" id="amigos" name="una">
+                   <label for="amigos">Grupo de amigos</label>
+
+                   <input type="radio" id="lunademiel" name="una">
+                   <label for="lunademiel">Luna de miel</label>
+
+                   <input type="radio" id="celebracion" name="una">
+                   <label for="celebracion">Celebración especial</label>
+
+                   <input type="radio" id="empresarial" name="una">
+                   <label for="empresarial">Empresarial</label>
+               </fieldset>
+               <fieldset>
+                   <legend>DETALLES ADICIONALES</legend>
+                   <label for="comentarios">Cuéntanos más sobre tu viaje ideal</label>
+                   <textarea name="comentarios" id="comentarios" placeholder="Comparte cualquier detalle que nos ayude a diseñar tu experiencia."></textarea>
+               </fieldset>
+               <fieldset>
+                   <legend>CONSENTIMIENTO</legend>
+                   <input type="checkbox" id="consentimiento">
+                   <label for="consentimiento">He leído y acepto la política de privacidad.</label>
+
+                   <input type="checkbox" id="suscripcion">
+                   <label for="suscripcion">Deseo recibir ofertas, novedades y promociones exclusivas sobre destinos en Colombia.</label>
+               </fieldset>
+               <input class="enviarformulario" type="submit" name="" id="" value="Enviar Solicitud">
+           </form>
+    </section>
+    </main>
+
+    <footer>
+        <section>
+        <h3>Contáctanos</h3>
+        <p>¿Listo para descubrir Colombia? Contáctanos para planificar tu viaje a medida y vivir una experiencia inolvidable.</p>
+        <h3>Sobre Nosotros</h3>
+        <p>Creamos experiencias auténticas para descubrir la diversidad, la cultura y la belleza natural de Colombia. Diseñamos viajes pensados para cada viajero, combinando destinos emblemáticos, atención personalizada y experiencias inolvidables.</p>
+       </section>
+       <section >
+           <h3>Destinos</h3>
+           <nav>
+               <a href="../pages/caribe.html">Caribe</a>
+               <a href="../pages/ciudades.html">Ciudades</a>
+               <a href="../pages/naturaleza.html">Naturaleza</a>
+           </nav>
+       </section>
+       <section>
+           <h3>Contacto</h3>
+           <a href="../pages/planifica.html">Planifica tu viaje</a>
+           <p>info@almacolombiana.com</p>
+           <p>+57 300 123 4567</p>
+           <p>Bogotá, Colombia</p>
+           <p>Buenos Aires, Argentina</p>
+       </section>
+       <section>
+           <h3>Síguenos</h3>
+           <ul>
+               <li><a href="instagram.com">Instagram</a></li>
+               <li><a href="facebook.com">Facebook</a></li>
+               <li><a href="tiktok.com">TikTok</a></li>
+           </ul>
+       </section>
+       <section>
+           <p>Colombia te espera. Nosotros te ayudamos a descubrirla.</p>
+            <figure>
+            <img src="../img/logopuntos.png" alt="logopuntos colombia magica">
+           </figure>
+        </section>
+       <section>
+           <p>© 2026 Colombia Mágica. Todos los derechos reservados.</p>
+       </section>
+    </footer> 
+</body>
+</html>
