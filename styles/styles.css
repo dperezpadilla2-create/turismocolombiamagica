@@ -10,10 +10,10 @@ html{
     font-size: 62.5%;
 }
 body{
-    background-color: #F6F7FB;
+    background-color: #F9E7B4;
     font-family: "Quicksand", sans-serif;
-    font-size: 2rem;
-    padding: 30px;
+    font-size: 1.8rem;
+    padding: 1.5rem;
 }
 h1,
 h2,
@@ -26,32 +26,35 @@ h6{
 a{
     color: #124C80;
     text-decoration: none;
+    font-weight: 800;
 }
 ul{
     list-style: none;
 }
 img{
-    width: 200px;
+    max-width: 100%;
+}
+.logoheader{
+    width: 150px;
 }
 /*header*/
 header{
-    width: 1000px;
+    width: 100%;
     padding: 2rem;
-    border:solid;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    position: sticky;
-    top: 0;
-    background-color: #F6F7FB;
+    gap: 1rem;
 }
 header nav ul{
     display: flex;
-    gap: 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 h1{
-    font-size: 5rem;
-    font-weight: 700;
+    font-size: 3rem;
+    font-weight: 900;
     color: #124C80;
 }
 header nav{
@@ -59,10 +62,8 @@ header nav{
 }
 /*main*/
 main{
-    width: 1000px;
+    width: 100%;
     padding: 2rem;
-    border: solid;
-    margin-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -74,28 +75,35 @@ figure{
     flex-direction: column;
     gap: 1.5rem;
 }
+article{
+    transition: transform 0.3s ease;
+}
+
+article:hover{
+    transform: scale(1.02);
+}
 h2{
     color: #8C1821;
     font-weight: 800;
-    font-size: 3.6rem;
+    font-size: 2.5rem;
 }
 h3{
     color: #8C1821;
-    font-weight: 600;
-    font-size: 2.3rem;
+    font-weight: 700;
+    font-size: 2rem;
 }
 .duracion{
     font-weight: 700;
 }
 .precio{
     font-style: italic;
-    letter-spacing: 2px;
+    letter-spacing: 0.3rem;
 }
 /*Form*/
 form{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 fieldset{
     display: flex;
@@ -104,21 +112,20 @@ fieldset{
 }
 legend{
     font-weight: 700;
-    font-size: 2.4rem;
+    font-size: 2rem;
 }
 .enviarformulario{
     font-weight: 900;
     font-size: 2rem;
-    letter-spacing: 1px;
+    letter-spacing: 0.3rem;
 }
 /*footer*/
 footer{
-    border: solid;
-    width: 1000px;
+    width: 100%;
     padding: 2rem;
-    margin-top: 30px;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 2rem;
 }
 footer section, footer nav{
     gap: 1.5rem;
@@ -133,5 +140,178 @@ footer p{
 }
 footer a{
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 800;
+}
+/*DESTINOS DESTACADOS*/
+.destinos-destacados{
+    display: grid;
+    gap: 2rem;
+    grid-template-areas:
+    "titulodestacados"
+    "caribe"
+    "ciudades"
+    "naturaleza";
+}
+.titulo-destinos-destacados{
+    grid-area: titulodestacados;
+}
+.destacados-caribe{
+    grid-area: caribe;
+}
+.destacados-ciudades{
+    grid-area: ciudades;
+}
+.destacados-naturaleza{
+    grid-area: naturaleza;
+}
+/*TOURS NATURALEZA*/
+.tours-naturaleza{
+    display: grid;
+    gap: 2rem;
+    grid-template-areas:
+    "titulotours"
+    "cristales"
+    "cafetero"
+    "desierto";
+}
+.titulo-tours-naturaleza{
+    grid-area: titulotours;
+}
+.tours-naturaleza-cristales{
+    grid-area: cristales;
+}
+.tours-naturaleza-cafetero{
+    grid-area: cafetero;
+}
+.tours-naturaleza-desierto{
+    grid-area: desierto;
+}
+
+/*PROYECTOS DESTINOS*/
+.proyectos-destinos-caribe{
+    display: grid;
+    gap: 2rem;
+    grid-template-areas:
+    "titulocaribe"
+    "cartagena"
+    "sanandres"
+    "tayrona";
+}
+.titulo-proyectos-destinos-caribe{
+    grid-area: titulocaribe;
+}
+.proyectos-destinos-cartagena{
+    grid-area: cartagena;
+}
+.proyectos-destinos-san-andres{
+    grid-area: sanandres;
+}
+.proyectos-destinos-tayrona{
+    grid-area: tayrona;
+}
+
+.proyectos-destinos-ciudades{
+    display: grid;
+    gap: 2rem;
+    grid-template-areas:
+    "titulociudades"
+    "bogota"
+    "medellin"
+    "cali";
+}
+
+.titulo-proyectos-destinos-ciudades{
+    grid-area: titulociudades;
+}
+.proyectos-destinos-bogota{
+    grid-area: bogota;
+}
+.proyectos-destinos-medellin{
+    grid-area: medellin;
+}
+.proyectos-destinos-cali{
+    grid-area: cali;
+}
+
+/* MEDIAQUERIES */
+/* Mobile */
+/* CSS base */
+
+/* Tablet */
+@media (min-width: 768px){
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+.destinos-destacados{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "titulodestacados titulodestacados"
+    "caribe ciudades"
+    "naturaleza naturaleza";
+}
+.tours-naturaleza{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "titulotours titulotours"
+    "cristales cafetero"
+    "desierto desierto";
+}
+.proyectos-destinos-caribe{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "titulocaribe titulocaribe"
+    "cartagena sanandres"
+    "tayrona tayrona";
+}
+.proyectos-destinos-ciudades{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "titulociudades titulociudades"
+    "bogota medellin"
+    "cali cali";
+}
+}
+/* Desktop */
+@media (min-width: 1024px){
+.destinos-destacados{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "titulodestacados titulodestacados titulodestacados"
+    "caribe ciudades naturaleza";
+}
+.tours-naturaleza{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "titulotours titulotours titulotours"
+    "cristales cafetero desierto";
+}
+.proyectos-destinos-caribe{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-areas:
+    "titulocaribe titulocaribe titulocaribe"
+    "cartagena sanandres tayrona";
+}
+.proyectos-destinos-ciudades{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-areas:
+    "titulociudades titulociudades titulociudades"
+    "bogota medellin cali";
+}
 }
